@@ -1,0 +1,37 @@
+{
+  "name": "fastfy-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest",
+    "build": "tsup src --out-dir build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.14.1",
+    "knex": "^2.4.2",
+    "pg": "^8.10.0",
+    "sqlite3": "^5.1.6",
+    "typescript": "^4.9.5",
+    "vitest": "^0.29.7",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.2",
+    "@types/supertest": "^2.0.12",
+    "supertest": "^6.3.3",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.5"
+  }
+}
